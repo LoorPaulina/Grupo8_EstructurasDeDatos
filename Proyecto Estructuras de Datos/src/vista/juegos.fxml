@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="856.0" prefWidth="1279.0" styleClass="fondo" stylesheets="@css/estilos.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="897.0" prefWidth="1350.0">
+         <top>
+            <ImageView fx:id="logo" fitHeight="119.0" fitWidth="588.0" pickOnBounds="true" preserveRatio="true">
+               <BorderPane.margin>
+                  <Insets left="50.0" top="10.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </top>
+         <left>
+            <AnchorPane prefHeight="575.0" prefWidth="839.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="325.0" prefWidth="217.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="imagen" disable="true" fitHeight="450.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" />
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button fx:id="id2" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="btn-3" />
+                                    <Button fx:id="id1" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="btn-3" />
+                                    <Button fx:id="id3" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" styleClass="btn-3" />
+                                    <Button fx:id="id4" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="btn-3" />
+                                    <Button fx:id="inicio" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#switchToPrimary" prefHeight="122.0" prefWidth="208.0" styleClass="btn-2" text="VOLVER AL INICIO" />
+                                    <Button fx:id="wishList" mnemonicParsing="false" onMouseClicked="#anadirAwishList" prefHeight="122.0" prefWidth="229.0" styleClass="btn-2" text="AÑADIR A WISHLIST" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="35.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="768.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-21.0" layoutY="-135.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="608.0" styleClass="back2" stylesheets="@css/estilos.css" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <Label fx:id="nombreJuego" minHeight="-Infinity" prefHeight="74.0" prefWidth="500.0" stylesheets="@css/estilos.css" text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="96.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="btnTitle" />
+                           </styleClass>
+                        </Label>
+                        <VBox fx:id="descripcionesV" prefHeight="106.0" prefWidth="600.0" />
+                        <HBox prefHeight="45.0" prefWidth="412.0">
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="146.0" styleClass="textLine" text="Desarrollador: " textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Narrow" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="desarrolladorV" prefHeight="38.0" prefWidth="349.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="44.0" prefWidth="412.0">
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="183.0" styleClass="textLine" text="Fecha de Lanzamiento:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Narrow" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="anoLanza" prefHeight="38.0" prefWidth="313.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="102.0" styleClass="textLine" text="Categorías:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Narrow" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="categoriasV" prefHeight="35.0" prefWidth="486.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="542.0" prefWidth="533.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox fx:id="comentariosF" onAction="#cmbBox" prefHeight="26.0" prefWidth="308.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="474.0" prefWidth="575.0">
+                                 <content>
+                                    <VBox fx:id="comentarios" prefHeight="489.0" prefWidth="564.0" spacing="10.0" styleClass="back2" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

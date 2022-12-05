@@ -1,0 +1,164 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-size: 20%;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.pane{
+    -fx-background-image:url("/imagenes/fondoUser.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1600 1500;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.pane2{
+    -fx-background-image:url("/imagenes/fondoRegistro.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1600 1500;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.btn{
+    -fx-border-color:black;
+    -fx-background-color: #000000;
+    -fx-font-size:20px;
+    
+}
+
+.text-field-calendar {
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 4, 4, 4;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-padding: 3 15 3 5;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-padding: 10 15 10 15;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.VBox{
+    -fx-background-color: black;
+}
+
+#titulo{
+   -fx-font-size: 22px;
+   -fx-font-family: "Arial Black";
+   /*-fx-fill: #818181;*/
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+   -fx-text-fill: #00008B;
+}
+
+.fondo{
+    -fx-background-color: #000000;
+}
+.btn-2{
+    -fx-border-color:black;
+    -fx-background-color: #000000;
+    -fx-font-size:20px;
+    
+}
+.btn-2:hover{
+    -fx-backface-visibility: hidden;
+    -fx-border-color: cyan; 
+    -fx-transition-delay: 5s;
+    -fx-text-fill: cyan;
+    -fx-border-style: inherit;  
+}
+
+.btn-inicio{
+    -fx-border-color: #1C1C1C;
+    -fx-background-color:  #1C1C1C;
+    -fx-font-size:20px;
+    
+}
+.btn-inicio:hover{
+    -fx-backface-visibility: hidden;
+    -fx-border-color: purple; 
+    -fx-transition-delay: 5s;
+    -fx-text-fill: purple;
+    -fx-border-style: inherit;  
+}
+.cardb{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: rgba(100,100,100, 0.0);
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #828282;
+}
+
+.btn-3{
+    -fx-border-color:black;
+    -fx-background-color: #000000;
+
+    
+}
+.btn-3:hover{
+    -fx-backface-visibility: hidden;
+    -fx-border-color: #f4f4f4; 
+    -fx-transition-delay: 5s;
+    -fx-text-fill: cyan;
+    -fx-border-style: inherit;
+
+}
+
+.Vboxinicio{
+    -fx-background-color: #1C1C1C;
+
+}
+
+.card{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: rgba(100,100,100, 0.1);
+    -fx-font-size: 24px;
+    -fx-text-fill: #828282;
+}
+
+.card:hover{
+    -fx-background-color: rgba(100,100,100, 0.4);   
+}
+
+.back2{
+    -fx-background-color: #6441a5;
+}
+
+.btnSlide{
+    -fx-background-color: rgba(100,100,100, 0.1);   
+}
+
+.btnTitle{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: rgba(100,100,100, 0.0);
+    -fx-font-family: "Eurostile Std Bold Extended #2";
+    -fx-font-size:30px;
+    
+}
+
+.textLine{
+     -fx-font-size:15px;
+     -fx-font-family: "Arial Narrow";
+    
+}
+
+
+
+
+
